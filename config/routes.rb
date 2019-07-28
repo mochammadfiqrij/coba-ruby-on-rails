@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   get '/lesson', to: 'lesson#lesson'
   get '/lesson/:id', to: 'lesson#show'
 
-  resources :books
+  resources :books, only: [:index, :show]
 
 
 
